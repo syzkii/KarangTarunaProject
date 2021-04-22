@@ -20,7 +20,7 @@ if (isset($_GET['rt']) and isset($_GET['rw'])) {
 <body>
 	<div class="header col-md-12 row" style="margin: 10px 10px 10px 0; border-bottom: solid black 2px;">
 		<div class="col-md-8 text-center">
-		<div class="col-md-2"><img src="../../../img/logokartar.png" width="150px"></div>
+		<div class="col-md-2"><img src="../../../img/logokartar1.png" width="150px"></div>
 			<h2 class="text-primary"><strong>Karang Taruna KETUPAT</strong></h2><br/>
 			<h1 style="margin-top:-15px;font-family: times new roman;"><strong>RW 04</strong></h1>
 		</div>

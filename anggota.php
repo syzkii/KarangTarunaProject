@@ -35,10 +35,55 @@
             border:lightgreen solid 1px;
             transition: 0.5s;
         }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            height: 40px;
+            width: 40px;
+            z-index: 100;
+            bottom: 55px;
+            right: 30px;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            background-color: rgb(19, 226, 233);
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            padding: 0px;
+            border-radius: 50%;
+        }
+
+            #myBtn:hover {
+            background-color: #404040;
+}
     </style>
 </head>
 
 <body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
     <?php include 'nav.php'; ?>
     <!-- bradcam_area  -->
     <div class="bradcam_area bradcam_bg_1">
@@ -77,18 +122,6 @@
                         }
                         ?>
             </div>
-            <!-- <div class="row">
-                <div class="col-lg-12">
-                    <div class="pagination_wrap">
-                        <ul>
-                            <li><a href="#"> <i class="ti-angle-left"></i> </a></li>
-                            <li><a href="#"><span>01</span></a></li>
-                            <li><a href="#"><span>02</span></a></li>
-                            <li><a href="#"> <i class="ti-angle-right"></i> </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
     <!-- featured_candidates_area_end  -->

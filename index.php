@@ -35,10 +35,56 @@
             border:lightgreen solid 1px;
             transition: 0.5s;
         }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            height: 40px;
+            width: 40px;
+            z-index: 100;
+            bottom: 55px;
+            right: 30px;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            background-color: rgb(19, 226, 233);
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            padding: 0px;
+            border-radius: 50%;
+        }
+
+            #myBtn:hover {
+            background-color: #404040;
+}
     </style>
 </head>
 
 <body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+
 
     <?php include 'nav.php'; ?>
 
@@ -69,46 +115,16 @@
         <br><br><br>
     </div>
     <!-- catagory_area -->
-    <div class="catagory_area">
         <div class="container">
             <div class="desc">
+                <center><img src="img/logokartar1.png" class="wow fadeInLeft" alt="" height="230px" style="margin-top: 5px"></center></br>
                 <h2 class="wow fadeInRight">Pengertian Karang Taruna</h2>
                 <p class="text-justify wow fadeInLeft"><strong>Karang Taruna</strong> adalah organisasi kepemudaan di Indonesia. Karang Taruna merupakan wadah pengembangan generasi muda nonpartisan, yang tumbuh atas dasar kesadaran dan rasa tanggung jawab sosial dari, oleh dan untuk masyarakat khususnya generasi muda di wilayah Desa/ Kelurahan atau komunitas sosial sederajat, yang terutama bergerak dibidang kesejahteraan sosial. Sebagai organisasi sosial kepemudaan Karang Taruna merupakan wadah pembinaan dan pengembangan serta pemberdayaan dalam upaya mengembangkan kegiatan ekonomi produktif dengan pendayagunaan semua potensi yang tersedia di lingkungan baik sumber daya manusia maupun sumber daya alam yang telah ada. Sebagai organisasi kepemudaan, Karang Taruna berpedoman pada Pedoman Dasar dan Pedoman Rumah Tangga di mana telah pula diatur tentang struktur pengurus dan masa jabatan di masing-masing wilayah mulai dari Desa/ Kelurahan sampai pada tingkat Nasional. Semua ini wujud dari pada regenerasi organisasi demi kelanjutan organisasi serta pembinaan anggota Karang Taruna baik dimasa sekarang maupun masa yang akan datang.
                 <br>                <br>
                 <strong>Karang Taruna</strong> didirikan dengan tujuan memberikan pembinaan dan pemberdayaan kepada para remaja, misalnya dalam bidang keorganisasian, ekonomi, olahraga, ketrampilan, advokasi, keagamaan dan kesenian. </p>
                 <p><a href="#">(source from internet)</p></a>
-            </div>
-            <!-- <div class="row cat_search">
-                <div class="col-lg-3 col-md-4">
-                    <div class="single_input">
-                        <input type="text" placeholder="Search keyword">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="single_input">
-                        <select class="wide" >
-                            <option data-display="Location">Location</option>
-                            <option value="1">RW 01</option>
-                            <option value="2">RW 02</option>
-                          </select>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="single_input">
-                        <select class="wide">
-                            <option data-display="Category">Category</option>
-                            <option value="1">Category 1</option>
-                            <option value="2">Category 2</option>
-                            <option value="4">Category 3</option>
-                          </select>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-12">
-                    <div class="job_btn">
-                        <a href="#" class="boxed-btn3">Find Job</a>
-                    </div>
-                </div>
-            </div> -->
+
+             </div>
         </div>
     </div>
     <!--/ catagory_area -->

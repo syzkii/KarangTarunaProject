@@ -30,15 +30,56 @@
         body{
             overflow-x: hidden;
         }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            height: 40px;
+            width: 40px;
+            z-index: 100;
+            bottom: 55px;
+            right: 30px;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            background-color: rgb(19, 226, 233);
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            padding: 0px;
+            border-radius: 50%;
+        }
+
+            #myBtn:hover {
+            background-color: #404040;
+        }
     </style>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
    <?php include 'nav.php'; ?>
 
     <!-- bradcam_area  -->

@@ -122,15 +122,15 @@
                     </div>
                     <div class="col-lg-6">
                       <img width="50px" src="assets/img/anggota/<?=$row['img']?>" title="<?php 
-                      if( $row['nama_anggota']=='Pink Guy'      ||
-                          $row['nama_anggota']=='pinkguy'       ||
-                          $row['nama_anggota']=='Filthy Frank'  ||
-                          $row['nama_anggota']=='filthy frank'  ||
-                          $row['nama_anggota']=='filthyfrank'   ||
-                          $row['nama_anggota']=='pink guy'      ){ 
-                            echo 'Are he is Joji?';
-                        }elseif($row['nama_anggota']=='Arnoldpo'){
-                            echo 'Hilih kintil!';
+                      if( $row['nama_anggota']==''  ||
+                          $row['nama_anggota']==''  ||
+                          $row['nama_anggota']==''  ||
+                          $row['nama_anggota']==''  ||
+                          $row['nama_anggota']==''  ||
+                          $row['nama_anggota']==''      ){ 
+                            echo '';
+                        }elseif($row['nama_anggota']==''){
+                            echo '';
                         }else{ 
                             echo $row['nama_anggota'];
                         } ?>">
