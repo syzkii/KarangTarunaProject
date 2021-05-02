@@ -58,6 +58,8 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logokartar1.png">
+
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 <style>
    #myBtn {
@@ -176,38 +178,38 @@ if (isset($_POST['submit'])) {
                                 <div class="col-md-12">
                                   <label>Nama Peminjam</label>
                                   <div class="input_field">
-                                    <input required type="text" name="nama" <?php if (isset($_POST['nama'])) { echo "value='".$_POST['nama']."'";} ?>placeholder="Peminjaman atas nama">
+                                    <input required type="text" class="form-control" name="nama" <?php if (isset($_POST['nama'])) { echo "value='".$_POST['nama']."'";} ?>placeholder="Peminjaman atas nama">
                                   </div>
                                 </div>
                                 <div class="col-md-12">
                                   <label>Kontak</label>
                                   <div class="input_field">
-                                    <input required type="tel" name="tel" <?php if (isset($_POST['tel'])) { echo "value='".$_POST['tel']."'";} ?> placeholder="Nomor Telpon / WA">
+                                    <input required type="tel" class="form-control" name="tel" <?php if (isset($_POST['tel'])) { echo "value='".$_POST['tel']."'";} ?> placeholder="Nomor Telepon / WA">
                                   </div>
                                 </div>
                                 <div class="col-md-12">
                                   <label>Peminjaman Tanggal</label>
                                   <div class="input_field">
-                                    <input required type="date" name="tgl" <?php if (isset($_POST['tgl'])) { echo "value='".$_POST['tgl']."'";} ?> min="<?=date('Y-m-d')?>" placeholder="Tanggal">
+                                    <input required type="date" class="form-control" name="tgl" <?php if (isset($_POST['tgl'])) { echo "value='".$_POST['tgl']."'";} ?> min="<?=date('Y-m-d')?>" placeholder="Tanggal">
                                   </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label>Waktu Mulai <small style="color: red; margin-top: 0">Input waktu menggunakan AM / PM</small></label>
                                     <div class="input_field">
-                                        <input required type="time" name="mulai" <?php if (isset($_POST['mulai'])) { echo "value='".$_POST['mulai']."'";} ?> placeholder="Mulai">
+                                        <input required type="time" class="form-control" name="mulai" <?php if (isset($_POST['mulai'])) { echo "value='".$_POST['mulai']."'";} ?> placeholder="Mulai">
                                     </div>
 
                                 </div>
                                 <div class="col-md-6">
                                   <label>Waktu Selesai</label>
-                                    <div class="input_field">
-                                        <input required type="time" name="selesai" <?php if (isset($_POST['selesai'])) { echo "value='".$_POST['selesai']."'";} ?>placeholder="Waktu Selesai">
+                                    <div class="input_field"></br>
+                                        <input required type="time" class="form-control" name="selesai" <?php if (isset($_POST['selesai'])) { echo "value='".$_POST['selesai']."'";} ?>placeholder="Waktu Selesai">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                   <label>Keperluan Peminjaman</label>
                                     <div class="input_field">
-                                        <input required type="text" name="keperluan" <?php if (isset($_POST['keperluan'])) { echo "value='".$_POST['keperluan']."'";} ?> placeholder="Keperluan Peminjaman">
+                                        <input required type="text" class="form-control" name="keperluan" <?php if (isset($_POST['keperluan'])) { echo "value='".$_POST['keperluan']."'";} ?> placeholder="Keperluan Peminjaman">
                                     </div>
                                 </div>
                                 <!-- <div class="col-md-12">
@@ -224,8 +226,8 @@ if (isset($_POST['submit'])) {
                                 </div> -->
                                 <div class="col-md-12">
                                   <label>Deskripsi</label>
-                                    <div class="input_field">
-                                        <textarea required name="deskripsi" id="message" cols="30" rows="10" placeholder="Saya meminjam ini untuk suatu keperluan ... "><?php if (isset($_POST['deskripsi'])) { echo $_POST['deskripsi'];} ?></textarea>
+                                    <div class="input_field md-form">
+                                        <textarea required name="deskripsi" class="md-textarea form-control" id="message" cols="30" rows="10" placeholder="Saya meminjam ini untuk suatu keperluan ... "><?php if (isset($_POST['deskripsi'])) { echo $_POST['deskripsi'];} ?></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -274,7 +276,7 @@ if (isset($_POST['submit'])) {
             <span class="contact-info__icon"><i class="ti-home"></i></span>
             <div class="media-body">
               <h3>Balai RW</h3>
-              <p>Jl.############</p>
+              <p>Jl.</p>
             </div>
           </div>
           <div class="media contact-info">
@@ -287,8 +289,8 @@ if (isset($_POST['submit'])) {
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-headphone-alt"></i></span>
             <div class="media-body">
-              <h3>Info Lebih Lanjut Kontak w</h3>
-              <p><?php $jab=mysqli_query($con,"SELECT * FROM anggota join jabatan on anggota.jabatan=jabatan.id where jabatan.nama_jabatan='Humas' or jabatan.nama_jabatan='humas' or jabatan.nama_jabatan='hubungan masyarakat' or jabatan.nama_jabatan='Hubungan Masyarakat' order by NIK");
+              <h3>Info Lebih Lanjut Kontak</h3>
+              <p>081615304956<?php $jab=mysqli_query($con,"SELECT * FROM anggota join jabatan on anggota.jabatan=jabatan.id where jabatan.nama_jabatan='Humas' or jabatan.nama_jabatan='humas' or jabatan.nama_jabatan='hubungan masyarakat' or jabatan.nama_jabatan='Hubungan Masyarakat' order by NIK");
                 while ($humas=mysqli_fetch_array($jab)) {
                   echo $humas['tel'].'. ';
                 }

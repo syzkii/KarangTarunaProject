@@ -20,7 +20,7 @@
 
           			</div>
           			<div class="form-group">
-          				<button type="submit" name="simpan" class="btn btn-success"><i class="fa fa-save"></i>Save Changes</button>
+          				<button type="submit" name="simpan" class="btn btn-success"><i class="fa fa-save"></i> Save Changes</button>
           			</div>
           		</form>
           	</div>

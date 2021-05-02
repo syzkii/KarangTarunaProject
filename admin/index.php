@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="assets/plugins/datatables/dataTables.bootstrap.css">
   <link rel="stylesheet" href="assets/dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="assets/dist/css/skins/_all-skins.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../img/logokartar1.png">
   <script src="https://www.chartjs.org/dist/2.8.0/Chart.min.js"></script>
   <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
   <style type="text/css">

@@ -33,6 +33,7 @@
                                             </li> -->
                                             <li><a href="job_details.php">Kegiatan</a></li>
                                             <li><a href="contact.php">Peminjaman</a></li>
+                                            <li><a href="maps.php">Lokasi</a></li>
                                         </ul>
                                     </nav>
                                 </div>

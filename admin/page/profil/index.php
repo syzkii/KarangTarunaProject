@@ -29,7 +29,7 @@
           <br>
           <div class="col-lg-12 row mb-2 mt-2">
           	<div class="col-md-6">
-          		<img style="border-radius: 50%; height: 250px" src="assets/img/anggota/<?=$_SESSION['img']?>" class="user-image">
+          		<img style="border-radius: 50%; height: 240px; width: 240px;" src="assets/img/anggota/<?=$_SESSION['img']?>" class="user-image">
           	</div>
           	<div class="col-md-6">
           		<table>

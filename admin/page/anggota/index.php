@@ -78,14 +78,14 @@
           <table id="example1" class="table table-bordered table-striped">
             <thead>
             <tr>
-              <th>#</th>
+              <th>NO</th>
               <th>NIK</th>
               <th>Nama</th>
               <th>TTL</th>
               <th>No. Telp/WA</th>
               <th>E-mail</th>
               <th>Alamat</th>
-              <th class="no-print d-print-none"></th>
+              <th class="no-print d-print-none">Opsi</th>
             </tr>
             </thead>
             <tbody>
@@ -142,7 +142,7 @@
                 <td><?= $row['tel'] ?></td>
                 <td><?= $row['email'] ?></td>
                 <td><?= $str ?>, <br>RT <?=$row['rt']?>, RW <?=$row['rw']?></td>
-                <td class="no-print d-print-none">
+                <td class="no-print d-print-none"><center>
                   <a href="index.php?p=anggota&act=edit&id=<?= $row['NIK'] ?>" class="btn btn-primary"><i class="fa fa-edit"></i></a>
                   <a href="index.php?p=anggota&delete&id=<?= $row['NIK'] ?>" class="btn btn-danger" onclick="return confirm('Apakah data akan dihapus?')"><i class="fa fa-trash"></i></a>
                 </td>

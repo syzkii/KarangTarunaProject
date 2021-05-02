@@ -12,7 +12,7 @@
                                 </a>
                             </div>
                             <p>
-                                Karang Taruna<br> KETUPAT
+                                Karang Taruna</br> KETUPAT
                             </p>
                             <div class="socail_links">
                                 <ul>

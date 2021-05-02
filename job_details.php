@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/gijgo.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/slicknav.css">
-
+    <link rel="shortcut icon" type="image/x-icon" href="img/logokartar1.png">
     <link rel="stylesheet" href="css/style.css">
     <style type="text/css">
         body{

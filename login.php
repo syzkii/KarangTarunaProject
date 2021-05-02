@@ -53,6 +53,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="admin/assets/dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="admin/assets/plugins/iCheck/square/blue.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logokartar1.png">
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
