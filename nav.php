@@ -1,4 +1,8 @@
 <!-- header-start -->
+    <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    </head>
     <header>
         <div class="header-area ">
             <div id="sticky-header" class="main-header-area">
@@ -8,7 +12,7 @@
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="index.php">
-                                        <img src="img/logokartar1.png" alt="" height="110px" style="margin-top: -2px">
+                                        <img src="img/logokartar1.png" alt="" height="70px" style="margin-top: 2px" data-aos="fade-right"  data-aos-delay="1000" data-aos-easing="ease-in-out"/>
                                     </a><br/>
                                 </div>
                             </div>
@@ -16,12 +20,12 @@
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="index.php">home</a></li>
+                                            <li><a href="index.php">Home</a></li>
                                             <!-- <li><a href="jobs.php">Browse Job</a></li> -->
                                             <li><a href="#">Laman <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="anggota.php">Anggota </a></li>
-                                                    <li><a href="jobs.php">Jabatan</a></li>
+                                                    <li><a class="dropdown-item" href="anggota.php">Anggota </a></li>
+                                                    <li><a class="dropdown-item" href="jobs.php">Jabatan</a></li>
                                                    <!--  <li><a href="elements.php">elements</a></li> -->
                                                 </ul>
                                             </li>
@@ -55,4 +59,8 @@
             </div>
         </div>
     </header>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- header-end -->

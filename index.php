@@ -36,6 +36,39 @@
             transition: 0.5s;
         }
 
+        #slider .carousel-content{
+        	height: 600px;
+        	width: 100%;
+        	background-size: cover;
+        	background-position: center;
+        	background-repeat: no-repeat;
+        }
+         .carousel-content .card{
+        	position: absolute;
+        	right: 100px;
+        	bottom: 50px;
+        	border: none;
+        	max-width: 30%;
+        	border-radius: 0;
+            color: white;
+            background-color: rgba(0,0,0,0.5);
+        }
+        @media screen and (max-width: 768px){
+        	#slider .carousel-content .card{
+        		max-width: 50%;
+        		right: 30px;
+        		bottom: 50px;
+        	}
+        }
+        @media screen and (max-width: 576px){
+        	#slider .carousel-content .card{
+        		max-width: 100%;
+        		right: 0;
+        		bottom: 0;
+        		left: 0;
+        	}
+        }
+
         #myBtn {
             display: none;
             position: fixed;
@@ -56,7 +89,7 @@
 
             #myBtn:hover {
             background-color: #404040;
-}
+        }
     </style>
 </head>
 
@@ -88,6 +121,7 @@
 
     <?php include 'nav.php'; ?>
 
+
     <!-- slider_area_start -->
     <div class="slider_area">
         <div class="single_slider  d-flex align-items-center slider_bg_1">
@@ -107,26 +141,72 @@
             </div>
         </div>
         <div class="ilstration_img wow fadeInRight d-none d-lg-block text-right" data-wow-duration="3s" data-wow-delay=".2s">
-            <img src="img/banner/ilustrasi.png" alt="">
+            <img src="img/banner/ilustrasi.png" alt="ilustrasi">
         </div>
     </div>
     <!-- slider_area_end -->
-    <div id="about">
-        <br><br><br>
-    </div>
+    
     <!-- catagory_area -->
-        <div class="container">
-            <div class="desc">
-                <center><img src="img/logokartar1.png" class="wow fadeInLeft" alt="" height="230px" style="margin-top: 5px"></center></br>
-                <h2 class="wow fadeInRight">Pengertian Karang Taruna</h2>
-                <p class="text-justify wow fadeInLeft"><strong>Karang Taruna</strong> adalah organisasi kepemudaan di Indonesia. Karang Taruna merupakan wadah pengembangan generasi muda nonpartisan, yang tumbuh atas dasar kesadaran dan rasa tanggung jawab sosial dari, oleh dan untuk masyarakat khususnya generasi muda di wilayah Desa/ Kelurahan atau komunitas sosial sederajat, yang terutama bergerak dibidang kesejahteraan sosial. Sebagai organisasi sosial kepemudaan Karang Taruna merupakan wadah pembinaan dan pengembangan serta pemberdayaan dalam upaya mengembangkan kegiatan ekonomi produktif dengan pendayagunaan semua potensi yang tersedia di lingkungan baik sumber daya manusia maupun sumber daya alam yang telah ada. Sebagai organisasi kepemudaan, Karang Taruna berpedoman pada Pedoman Dasar dan Pedoman Rumah Tangga di mana telah pula diatur tentang struktur pengurus dan masa jabatan di masing-masing wilayah mulai dari Desa/ Kelurahan sampai pada tingkat Nasional. Semua ini wujud dari pada regenerasi organisasi demi kelanjutan organisasi serta pembinaan anggota Karang Taruna baik dimasa sekarang maupun masa yang akan datang.
+   
+            <div class="container">
+            <div class="desc"><br/><br/>
+            <h2 class="wow fadeInRight">Pengertian Karang Taruna</h2>
+            <p class="wow fadeInLeft"><strong>Karang Taruna</strong> adalah organisasi kepemudaan di Indonesia. Karang Taruna merupakan wadah pengembangan generasi muda nonpartisan, yang tumbuh atas dasar kesadaran dan rasa tanggung jawab sosial dari, oleh dan untuk masyarakat khususnya generasi muda di wilayah Desa/ Kelurahan atau komunitas sosial sederajat, yang terutama bergerak dibidang kesejahteraan sosial. Sebagai organisasi sosial kepemudaan Karang Taruna merupakan wadah pembinaan dan pengembangan serta pemberdayaan dalam upaya mengembangkan kegiatan ekonomi produktif dengan pendayagunaan semua potensi yang tersedia di lingkungan baik sumber daya manusia maupun sumber daya alam yang telah ada. Sebagai organisasi kepemudaan, Karang Taruna berpedoman pada Pedoman Dasar dan Pedoman Rumah Tangga di mana telah pula diatur tentang struktur pengurus dan masa jabatan di masing-masing wilayah mulai dari Desa/ Kelurahan sampai pada tingkat Nasional. Semua ini wujud dari pada regenerasi organisasi demi kelanjutan organisasi serta pembinaan anggota Karang Taruna baik dimasa sekarang maupun masa yang akan datang.
                 <br>                <br>
                 <strong>Karang Taruna</strong> didirikan dengan tujuan memberikan pembinaan dan pemberdayaan kepada para remaja, misalnya dalam bidang keorganisasian, ekonomi, olahraga, ketrampilan, advokasi, keagamaan dan kesenian. </p>
                 <p><a href="#">(source from internet)</p></a>
+            
+            <h2 class="wow fadeInRight">Kegiatan Karang Taruna</h2><br/>
+
 
              </div>
         </div>
-    </div>
+    
+        <div class="carousel slide" data-ride="carousel" id="slider" data-pause="false">
+		<ol class="carousel-indicators">
+			<li data-target="#slider" data-slide-to="0" class="active"></li>
+			<li data-target="#slider" data-slide-to="1"></li>
+			<li data-target="#slider" data-slide-to="2"></li>
+			<li data-target="#slider" data-slide-to="3"></li>
+			<li data-target="#slider" data-slide-to="4"></li>
+		</ol>
+
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="carousel-content" style="background-image: url('img/corousel/1.jpg');">
+					<div class="container">
+						<div class="card">
+							<div class="card-body">
+								<h2>Bank Indonesia</h2>
+								<p>Bank Indonesia KPw DKI Jakarta ingin membuat media promosi untuk memamerkan produk lokal mereka seperti seperti koleksi kuno Batik Betawi, kebaya encim dan aksesori etnik yang dibuat oleh pengrajin lokal.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="carousel-content" style="background-image: url('img/corousel/1.jpg');">
+					<div class="container">
+						<div class="card">
+							<div class="card-body">
+								<h2>Initeh Thai Tea</h2>
+								<p>Produk minuman ini terdiri dari dua varian, teh thai dan teh hijau. Produk ini memberikan beberapa permainan kata-kata di setiap sisi botol untuk memberikan kesan humor. Itu bisa dilihat dari nama produk itu sendiri.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+
+		<a href="#" class="carousel-control-prev" data-slide="prev" data-target="#slider">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		<a href="#" class="carousel-control-next" data-slide="next" data-target="#slider">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+	</div>  
+        </div>
+
     <!--/ catagory_area -->
     <div  id="kegiatan"><br><br><br></div>
     <!-- popular_catagory_area_start  -->
@@ -237,6 +317,7 @@
             </div>
         </div>
     </div>
+</div>
     <!-- featured_candidates_area_end  -->
 <?php include 'footer.php'; ?>
 

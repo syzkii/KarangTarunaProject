@@ -79,7 +79,6 @@ button {
 /* line 40, ../../Arafath/CL/December/235. Job board/HTML/scss/theme-default.scss */
 h1, h2, h3, h4, h5 {
   font-family: "Roboto", sans-serif;
-  color: #191d34;
 }
 
 /* line 44, ../../Arafath/CL/December/235. Job board/HTML/scss/theme-default.scss */
@@ -108,7 +107,6 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-  color: #7A838B;
   margin-bottom: 13px;
   font-family: "Roboto", sans-serif;
 }
@@ -196,19 +194,6 @@ h3 {
 }
 
 /* line 131, ../../Arafath/CL/December/235. Job board/HTML/scss/theme-default.scss */
-.bg-img-1 {
-  background-image: url(../img/slider/slider-img-1.jpg);
-}
-
-/* line 134, ../../Arafath/CL/December/235. Job board/HTML/scss/theme-default.scss */
-.bg-img-2 {
-  background-image: url(../img/background-img/bg-img-2.jpg);
-}
-
-/* line 137, ../../Arafath/CL/December/235. Job board/HTML/scss/theme-default.scss */
-.cta-bg-1 {
-  background-image: url(../img/background-img/bg-img-3.jpg);
-}
 
 /* line 142, ../../Arafath/CL/December/235. Job board/HTML/scss/theme-default.scss */
 .overlay {
@@ -1387,11 +1372,6 @@ h3 {
 /* line 1, ../../Arafath/CL/December/235. Job board/HTML/scss/_slider.scss */
 .slider_bg_1 {
   background-image: url(../img/banner/banner.png);
-}
-
-/* line 4, ../../Arafath/CL/December/235. Job board/HTML/scss/_slider.scss */
-.slider_bg_2 {
-  background-image: url(../img/banner/banner_2.png);
 }
 
 /* line 7, ../../Arafath/CL/December/235. Job board/HTML/scss/_slider.scss */
@@ -5600,12 +5580,6 @@ h6 {
   border: 1px solid #f1f1f1;
 }
 
-/* line 950, ../../Arafath/CL/December/235. Job board/HTML/scss/_elements.scss */
-.confirm-radio input:checked + label {
-  background: url(../img/elements/success-radio.png) no-repeat center center/cover;
-  border: none;
-}
-
 /* line 958, ../../Arafath/CL/December/235. Job board/HTML/scss/_elements.scss */
 .disabled-radio {
   width: 16px;
@@ -5720,6 +5694,40 @@ h6 {
   height: 40px;
   width: 100%;
 }
+
+#slider .carousel-content{
+	height: 600px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#slider .carousel-content .card{
+	position: absolute;
+	right: 30px;
+	bottom: 50px;
+	border: none;
+	max-width: 30%;
+	border-radius: 0;
+	background-color: rgba(0,0,0,0,0.5);
+	color: white;
+}
+@media screen and (max-width: 768px){
+	#slider .carousel-content .card{
+		max-width: 50%;
+		right: 30px;
+		bottom: 50px;
+	}
+}
+@media screen and (max-width: 576px){
+	#slider .carousel-content .card{
+		max-width: 100%;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+/* /SLIDER */
 
 /* line 1045, ../../Arafath/CL/December/235. Job board/HTML/scss/_elements.scss */
 .form-select .nice-select {

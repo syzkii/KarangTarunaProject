@@ -101,35 +101,34 @@
     <!--/ bradcam_area  -->
     <!-- featured_candidates_area_start  -->
     <section class="contact-section section_padding">
-    <div class="container">
-    <div class="row">
-        <div class="col-lg-8 ">
-        <div class="job_details_area bg-white mt-0">
-        <div class="col-lg-12">
-        <h4>Lokasi</h4>
-        <div class="apply_job_form white-bg mt-0">
-        <form action="" method="post">
-
-                                   <div class="row">
-                                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.57007904827!2d112.61611754884171!3d-7.175591672379649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77ffd035b26001%3A0xbe42fb866c986b71!2sBalai%20RW%204%20Green%20Hill!5e0!3m2!1sen!2sid!4v1619910393891!5m2!1sen!2sid" width="250" height="290" style="border:0; position:-webkit-sticky;" allowfullscreen="" loading="lazy"></iframe>
-                                    <div class="col-md-12">
-                                  <div class="input_field">
-                                </div>
-                               </div>
+       <div class="container">
+          <div class="row">
+              <div class="col-lg-8 ">
+                 <div class="job_details_area bg-white mt-0">
+                     <div class="col-lg-12">
+                        <h4>Lokasi</h4>
+                            <div class="apply_job_form white-bg mt-0">
+                                 <form action="" method="post">
+                                      <div class="row">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.57007904827!2d112.61611754884171!3d-7.175591672379649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77ffd035b26001%3A0xbe42fb866c986b71!2sBalai%20RW%204%20Green%20Hill!5e0!3m2!1sen!2sid!4v1619910393891!5m2!1sen!2sid" width="250" height="290" style="border:0; position:-webkit-sticky;" allowfullscreen="" loading="lazy"></iframe>
+                                          <div class="col-md-12">
+                                            <div class="input_field">
+                                          </div>
+                                      </div>
+                                   </div>
+                                </form>
                             </div>
-                        </form>
-                     </div>
-                </div>
-            </div>
-        </div>
-<div class="col-lg-4">
+                        </div>
+                    </div>
+                  </div>
+        <div class="col-lg-4">
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-home"></i></span>
-            <div class="media-body">
+              <div class="media-body">
               <h3>Balai RW</h3>
-            </div>
+              </div>
           </div>
-</div>
+        </div>
     </section>
     <!-- featured_candidates_area_end  -->
 
