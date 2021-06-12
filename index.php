@@ -94,7 +94,7 @@
 </head>
 
 <body>
-<button onclick="topFunction()" id="myBtn" title="Go to top">
+<button onclick="topFunction()" id="myBtn" title="Top">
       <i class="fa fa-chevron-up" aria-hidden="true"></i>
     </button>
     <script>
@@ -140,58 +140,67 @@
                 </div>
             </div>
         </div>
-        <div class="ilstration_img wow fadeInRight d-none d-lg-block text-right" data-wow-duration="3s" data-wow-delay=".2s">
-            <img src="img/banner/ilustrasi.png" alt="ilustrasi">
+             <div class="ilstration_img wow fadeInRight d-none d-lg-block text-right" data-wow-duration="3s" data-wow-delay=".2s">
+             <img src="img/banner/ilustrasi.png" alt="ilustrasi">
         </div>
     </div>
     <!-- slider_area_end -->
     
     <!-- catagory_area -->
    
-            <div class="container">
-            <div class="desc"><br/><br/>
+    <div class="container">
+        <div class="desc"><br/><br/>
             <h2 class="wow fadeInRight">Pengertian Karang Taruna</h2>
             <p class="wow fadeInLeft"><strong>Karang Taruna</strong> adalah organisasi kepemudaan di Indonesia. Karang Taruna merupakan wadah pengembangan generasi muda nonpartisan, yang tumbuh atas dasar kesadaran dan rasa tanggung jawab sosial dari, oleh dan untuk masyarakat khususnya generasi muda di wilayah Desa/ Kelurahan atau komunitas sosial sederajat, yang terutama bergerak dibidang kesejahteraan sosial. Sebagai organisasi sosial kepemudaan Karang Taruna merupakan wadah pembinaan dan pengembangan serta pemberdayaan dalam upaya mengembangkan kegiatan ekonomi produktif dengan pendayagunaan semua potensi yang tersedia di lingkungan baik sumber daya manusia maupun sumber daya alam yang telah ada. Sebagai organisasi kepemudaan, Karang Taruna berpedoman pada Pedoman Dasar dan Pedoman Rumah Tangga di mana telah pula diatur tentang struktur pengurus dan masa jabatan di masing-masing wilayah mulai dari Desa/ Kelurahan sampai pada tingkat Nasional. Semua ini wujud dari pada regenerasi organisasi demi kelanjutan organisasi serta pembinaan anggota Karang Taruna baik dimasa sekarang maupun masa yang akan datang.
-                <br>                <br>
-                <strong>Karang Taruna</strong> didirikan dengan tujuan memberikan pembinaan dan pemberdayaan kepada para remaja, misalnya dalam bidang keorganisasian, ekonomi, olahraga, ketrampilan, advokasi, keagamaan dan kesenian. </p>
-                <p><a href="#">(source from internet)</p></a>
-            
+            <br/><br/>
+            <strong>Karang Taruna</strong> didirikan dengan tujuan memberikan pembinaan dan pemberdayaan kepada para remaja, misalnya dalam bidang keorganisasian, ekonomi, olahraga, ketrampilan, advokasi, keagamaan dan kesenian. </p>
+            <p><a href="#">(source from internet)</p></a>
             <h2 class="wow fadeInRight">Kegiatan Karang Taruna</h2><br/>
-
-
-             </div>
         </div>
-    
-        <div class="carousel slide" data-ride="carousel" id="slider" data-pause="false">
+    </div>
+
+    <div class="carousel slide" data-ride="carousel" id="slider" data-pause="false">
 		<ol class="carousel-indicators">
 			<li data-target="#slider" data-slide-to="0" class="active"></li>
-			<li data-target="#slider" data-slide-to="1"></li>
-			<li data-target="#slider" data-slide-to="2"></li>
-			<li data-target="#slider" data-slide-to="3"></li>
-			<li data-target="#slider" data-slide-to="4"></li>
+			<li data-target="#slider" data-slide-to="rr (1)"></li>
+			<li data-target="#slider" data-slide-to="rr (2)"></li>
+			<li data-target="#slider" data-slide-to="rr (3)"></li>
 		</ol>
 
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<div class="carousel-content" style="background-image: url('img/corousel/1.jpg');">
-					<div class="container">
-						<div class="card">
-							<div class="card-body">
-								<h2>Bank Indonesia</h2>
-								<p>Bank Indonesia KPw DKI Jakarta ingin membuat media promosi untuk memamerkan produk lokal mereka seperti seperti koleksi kuno Batik Betawi, kebaya encim dan aksesori etnik yang dibuat oleh pengrajin lokal.</p>
-							</div>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<div class="carousel-content" style="background-image: url('img/corousel/rr (1).jpeg');">
+				<div class="container">
+					<div class="card">
+						<div class="card-body">
+							<h2>KEGIATAN DONOR DARAH</h2>
+							<p>Kegiatan yang diadakan 4 bulan sekali.</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="carousel-item">
-				<div class="carousel-content" style="background-image: url('img/corousel/1.jpg');">
-					<div class="container">
-						<div class="card">
-							<div class="card-body">
-								<h2>Initeh Thai Tea</h2>
-								<p>Produk minuman ini terdiri dari dua varian, teh thai dan teh hijau. Produk ini memberikan beberapa permainan kata-kata di setiap sisi botol untuk memberikan kesan humor. Itu bisa dilihat dari nama produk itu sendiri.</p>
-							</div>
+		</div>
+
+		<div class="carousel-item">
+			<div class="carousel-content" style="background-image: url('img/corousel/rr (2).jpeg');">
+				<div class="container">
+					<div class="card">
+						<div class="card-body">
+							<h2>KEGIATAN HALAL BIHALAL KARANG TARUNA</h2>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+
+        <div class="carousel-item">
+			<div class="carousel-content" style="background-image: url('img/corousel/rr (3).jpeg');">
+				<div class="container">
+					<div class="card">
+						<div class="card-body">
+							<h2>KEGIATAN HALAL BIHALAL KARANG TARUNA</h2>
+							<p></p>
 						</div>
 					</div>
 				</div>
@@ -204,9 +213,10 @@
 		<a href="#" class="carousel-control-next" data-slide="next" data-target="#slider">
 			<span class="carousel-control-next-icon"></span>
 		</a>
-	</div>  
+	    </div>  
         </div>
 
+       
     <!--/ catagory_area -->
     <div  id="kegiatan"><br><br><br></div>
     <!-- popular_catagory_area_start  -->
