@@ -78,8 +78,8 @@ button {
 
 /* line 40, ../../Arafath/CL/December/235. Job board/HTML/scss/theme-default.scss */
 h1, h2, h3, h4, h5 {
-  font-family: "Roboto", sans-serif;
-  color: rgba(9, 235, 243, 0.8);
+  color: #00D363;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* line 44, ../../Arafath/CL/December/235. Job board/HTML/scss/theme-default.scss */

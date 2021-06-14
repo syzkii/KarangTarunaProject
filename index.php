@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <style type="text/css">
         p span .badge{
             margin-top: 10px;
@@ -153,11 +155,23 @@
             <h2 class="wow fadeInRight">Pengertian Karang Taruna</h2>
             <p class="wow fadeInLeft"><strong>Karang Taruna</strong> adalah organisasi kepemudaan di Indonesia. Karang Taruna merupakan wadah pengembangan generasi muda nonpartisan, yang tumbuh atas dasar kesadaran dan rasa tanggung jawab sosial dari, oleh dan untuk masyarakat khususnya generasi muda di wilayah Desa/ Kelurahan atau komunitas sosial sederajat, yang terutama bergerak dibidang kesejahteraan sosial. Sebagai organisasi sosial kepemudaan Karang Taruna merupakan wadah pembinaan dan pengembangan serta pemberdayaan dalam upaya mengembangkan kegiatan ekonomi produktif dengan pendayagunaan semua potensi yang tersedia di lingkungan baik sumber daya manusia maupun sumber daya alam yang telah ada. Sebagai organisasi kepemudaan, Karang Taruna berpedoman pada Pedoman Dasar dan Pedoman Rumah Tangga di mana telah pula diatur tentang struktur pengurus dan masa jabatan di masing-masing wilayah mulai dari Desa/ Kelurahan sampai pada tingkat Nasional. Semua ini wujud dari pada regenerasi organisasi demi kelanjutan organisasi serta pembinaan anggota Karang Taruna baik dimasa sekarang maupun masa yang akan datang.
             <br/><br/>
-            <strong>Karang Taruna</strong> didirikan dengan tujuan memberikan pembinaan dan pemberdayaan kepada para remaja, misalnya dalam bidang keorganisasian, ekonomi, olahraga, ketrampilan, advokasi, keagamaan dan kesenian. </p>
+            <strong>Karang Taruna</strong> didirikan dengan tujuan memberikan pembinaan dan pemberdayaan kepada para remaja, misalnya dalam bidang keorganisasian, ekonomi, olahraga, ketrampilan, advokasi, keagamaan dan kesenian. </p></br>
             <p><a href="#">(source from internet)</p></a>
-            <h2 class="wow fadeInRight">Kegiatan Karang Taruna</h2><br/>
         </div>
     </div>
+
+    <!--/ catagory_area -->
+    <div  id="kegiatan"><br><br><br></div>
+    <!-- popular_catagory_area_start  -->
+        <div class="popular_catagory_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section_title mb-40">
+                            <h3>Kegiatan</h3>
+                        </div>
+                    </div>
+                </div>
 
     <div class="carousel slide" data-ride="carousel" id="slider" data-pause="false">
 		<ol class="carousel-indicators">
@@ -167,40 +181,39 @@
 			<li data-target="#slider" data-slide-to="rr (3)"></li>
 		</ol>
 
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<div class="carousel-content" style="background-image: url('img/corousel/rr (1).jpeg');">
-				<div class="container">
-					<div class="card">
-						<div class="card-body">
-							<h2>KEGIATAN DONOR DARAH</h2>
-							<p>Kegiatan yang diadakan 4 bulan sekali.</p>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="carousel-content" style="background-image: url('img/corousel/rr (1).jpeg');">
+					<div class="container">
+						<div class="card">
+							<div class="card-body">
+								<h2>Donor Darah</h2>
+								<p></p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<div class="carousel-item">
-			<div class="carousel-content" style="background-image: url('img/corousel/rr (2).jpeg');">
-				<div class="container">
-					<div class="card">
-						<div class="card-body">
-							<h2>KEGIATAN HALAL BIHALAL KARANG TARUNA</h2>
-							<p></p>
+			<div class="carousel-item">
+				<div class="carousel-content" style="background-image: url('img/corousel/rr (2).jpeg');">
+					<div class="container">
+						<div class="card">
+							<div class="card-body">
+								<h2>Halal Bihalal RW</h2>
+								<p></p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-        </div>
-
-        <div class="carousel-item">
-			<div class="carousel-content" style="background-image: url('img/corousel/rr (3).jpeg');">
-				<div class="container">
-					<div class="card">
-						<div class="card-body">
-							<h2>KEGIATAN HALAL BIHALAL KARANG TARUNA</h2>
-							<p></p>
+			<div class="carousel-item">
+				<div class="carousel-content" style="background-image: url('img/corousel/rr (3).jpeg');">
+					<div class="container">
+						<div class="card">
+							<div class="card-body">
+								<h2>Panitia Kegiatan Shalat Ied</h2>
+								<p></p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -213,35 +226,19 @@
 		<a href="#" class="carousel-control-next" data-slide="next" data-target="#slider">
 			<span class="carousel-control-next-icon"></span>
 		</a>
-	    </div>  
-        </div>
-
-       
-    <!--/ catagory_area -->
-    <div  id="kegiatan"><br><br><br></div>
-    <!-- popular_catagory_area_start  -->
-    <div class="popular_catagory_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section_title mb-40">
-                        <h3>Kegiatan</h3>
-                    </div>
-                </div>
-            </div>
+	</div></br>
+              
             <div class="row">
                 <?php $keg=mysqli_query($con,"SELECT * from kegiatan where tanggal < '".date("Y-m-d")."' order by tanggal desc limit 1");
                     while ($kegiatan=mysqli_fetch_array($keg)) {?>
-                    
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_catagory"  style="height: 250px;">
-                        <a href="job_details.php"><h4 style="height: 50px;"><?=$kegiatan['nama_kegiatan']?></h4></a>
-                        <p>
-                        <span ><?php echo date_format(date_create($kegiatan['tanggal']),'d M'); ?></span>
-                        <br>
-                        <?php 
-                        
-                        if($kegiatan['status']=='Booked') {
+    <div class="col-lg-4 col-xl-3 col-md-6">
+        <div class="single_catagory"  style="height: 250px;">
+            <a href="job_details.php"><h4 style="height: 50px;"><?=$kegiatan['nama_kegiatan']?></h4></a><p>
+            <span ><?php echo date_format(date_create($kegiatan['tanggal']),'d M'); ?></span>
+            <br/>
+
+                    <?php
+                    if($kegiatan['status']=='Booked') {
                           if($kegiatan['tanggal']==date('Y-m-d')){//hari ini acarana?>
                             <a style="color: red" >Belum Dipastikan</a>
                     <?php }elseif($kegiatan['tanggal'] > date('Y-m-d')){//belon harina?>
@@ -249,8 +246,8 @@
                     <?php }elseif($kegiatan['tanggal'] < date('Y-m-d')) {//udah liwat?>
                             <span class="badge badge-danger mt-2" style="background: red;color: white">Dibatalkan</span>
                     <?php }
-                  }elseif ($kegiatan['status']=='Reserved') {
-                    if($kegiatan['tanggal']==date('Y-m-d')){//hari ini acarana?>
+                          }elseif ($kegiatan['status']=='Reserved') {
+                          if($kegiatan['tanggal']==date('Y-m-d')){//hari ini acarana?>
                             <span class="badge badge-danger mt-2" style="background: green;color: white">Berlangsung</span>
                     <?php }elseif($kegiatan['tanggal'] > date('Y-m-d')){//belon harina?>
                             <span class="badge badge-danger bg-primary mt-2" style="color: white">Terjadwal</span>
@@ -259,7 +256,8 @@
                     <?php }}
 
                      ?> </p>
-                    </div>
+                </div>
+                </div>
                 </div>
                 <?php
                     }
@@ -267,37 +265,38 @@
                 <?php $keg=mysqli_query($con,"SELECT * from kegiatan where tanggal > '".date("Y-m-d")."' order by tanggal asc limit 3");
                     while ($kegiatan=mysqli_fetch_array($keg)) {?>
                     
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_catagory" style="height: 250px;">
-                        <a href="job_details.php"><h4 style="height: 50px;"><?=$kegiatan['nama_kegiatan']?></h4></a>
-                        <p>
-                        <span><?php echo date_format(date_create($kegiatan['tanggal']),'d M'); ?></span>
-                        <br>
-                    <?php 
-                        if (strlen($kegiatan['deskripsi']) > 50){
-                            $str = substr($kegiatan['deskripsi'], 0, 43) . '...';
-                          }else{
-                            $str=$kegiatan['deskripsi'];
-                          }
-                          echo $str;
-                     ?> </p>
-                    </div>
-                </div>
+    <div class="col-lg-4 col-xl-3 col-md-6">
+        <div class="single_catagory" style="height: 250px;">
+            <a href="job_details.php"><h4 style="height: 50px;"><?=$kegiatan['nama_kegiatan']?></h4></a>
+            <p>
+            <span><?php echo date_format(date_create($kegiatan['tanggal']),'d M'); ?></span>
+            <br/>
+
+                <?php 
+                    if (strlen($kegiatan['deskripsi']) > 50){
+                        $str = substr($kegiatan['deskripsi'], 0, 43) . '...';
+                      }else{
+                        $str=$kegiatan['deskripsi'];
+                      }
+                      echo $str;
+                 ?> </p>
+            </div> 
+            </div>
                 <?php
                     }
                  ?>
             </div>
-        </div>
-    </div>
+            </div>
+            
     
     <!-- job_listing_area_end  -->
-        <div  id="anggota"><br><br><br><br><br><br></div>
+    <div  id="anggota"><br/><br/><br/><br/><br/><br/></div>
     <!-- featured_candidates_area_start  -->
-    <div class="featured_candidates_area"  style="background: none">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section_title text-center mb-40">
+        <div class="featured_candidates_area"  style="background: none">
+             <div class="container">
+                <div class="row">
+                     <div class="col-lg-12">
+                        <div class="section_title text-center mb-40">
                         <h3>Anggota</h3>
                     </div>
                 </div>
@@ -307,7 +306,6 @@
                     <div class="candidate_active owl-carousel" >
                         <?php $angg=mysqli_query($con,"SELECT * FROM anggota");
                         while ($anggota=mysqli_fetch_array($angg)) {
-                            
                          ?>
                         <div class="single_candidates text-center" style="height: 280px">
                             <div class="thumb">
