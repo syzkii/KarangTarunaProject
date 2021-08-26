@@ -196,6 +196,7 @@
 			</div>
 			<div class="carousel-item">
 				<div class="carousel-content" style="background-image: url('img/corousel/rr (2).jpeg');">
+
 					<div class="container">
 						<div class="card">
 							<div class="card-body">
@@ -226,16 +227,17 @@
 		<a href="#" class="carousel-control-next" data-slide="next" data-target="#slider">
 			<span class="carousel-control-next-icon"></span>
 		</a>
-	</div></br>
+	</div></br></br>
               
             <div class="row">
                 <?php $keg=mysqli_query($con,"SELECT * from kegiatan where tanggal < '".date("Y-m-d")."' order by tanggal desc limit 1");
-                    while ($kegiatan=mysqli_fetch_array($keg)) {?>
+                    while ($kegiatan=mysqli_fetch_array($keg)) {
+                ?>
+
     <div class="col-lg-4 col-xl-3 col-md-6">
         <div class="single_catagory"  style="height: 250px;">
             <a href="job_details.php"><h4 style="height: 50px;"><?=$kegiatan['nama_kegiatan']?></h4></a><p>
             <span ><?php echo date_format(date_create($kegiatan['tanggal']),'d M'); ?></span>
-            <br/>
 
                     <?php
                     if($kegiatan['status']=='Booked') {
@@ -263,7 +265,8 @@
                     }
                  ?>
                 <?php $keg=mysqli_query($con,"SELECT * from kegiatan where tanggal > '".date("Y-m-d")."' order by tanggal asc limit 3");
-                    while ($kegiatan=mysqli_fetch_array($keg)) {?>
+                    while ($kegiatan=mysqli_fetch_array($keg)) {
+                ?>
                     
     <div class="col-lg-4 col-xl-3 col-md-6">
         <div class="single_catagory" style="height: 250px;">

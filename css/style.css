@@ -2805,10 +2805,10 @@ h3 {
 
 /* line 4, ../../Arafath/CL/December/235. Job board/HTML/scss/_popular_catagory.scss */
 .popular_catagory_area .single_catagory {
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 25px;
   padding: 38px 25px;
   border: 1px solid transparent;
   -webkit-transition: 0.3s;
@@ -2816,6 +2816,7 @@ h3 {
   -o-transition: 0.3s;
   transition: 0.3s;
   margin-bottom: 30px;
+  box-shadow: #000;
 }
 
 /* line 12, ../../Arafath/CL/December/235. Job board/HTML/scss/_popular_catagory.scss */

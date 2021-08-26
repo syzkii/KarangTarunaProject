@@ -84,7 +84,7 @@
                               
                                 ?>  
                             <form action="" method="POST" class="newsletter_form">
-                                <input type="email" required name="email" placeholder="Masukan E-mail">
+                                <input type="email" required name="email" placeholder="Masukkan-Email">
                                 <button type="submit" name="Subscribe">Subscribe</button>
                             </form>
                             <p class="newsletter_text">Ikuti dan dapatkan pemberitahuan tentang kegiatan Karang Taruna KETUPAT</p>
