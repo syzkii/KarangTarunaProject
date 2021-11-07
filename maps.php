@@ -86,12 +86,14 @@
       }
     </script>
     <?php include 'nav.php'; ?>
+
     <!-- bradcam_area  -->
     <div class="bradcam_area bradcam_bg_1">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text">
+                      <br>
                         <h3>Lokasi</h3>
                     </div>
                 </div>
@@ -99,6 +101,8 @@
         </div>
     </div>
     <!--/ bradcam_area  -->
+
+  
     <!-- featured_candidates_area_start  -->
     <section class="contact-section section_padding">
        <div class="container">
@@ -128,6 +132,8 @@
               <h3>Balai RW</h3>
               </div>
           </div>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63338.605340102746!2d112.61783166632082!3d-7.164920119062564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd800504acb3253%3A0x25d71798cd652fb9!2sGresik%2C%20Gresik%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1633528314304!5m2!1sen!2sid" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen></iframe>
         </div>
     </section>
     <!-- featured_candidates_area_end  -->

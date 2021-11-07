@@ -1176,7 +1176,7 @@ h3 {
   position: absolute;
   left: 0;
   top: 120%;
-  background: #fff;
+  background: rgb(63, 235, 120);
   width: 200px;
   z-index: 2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
@@ -2492,7 +2492,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/December/235. Job board/HTML/scss/_bradcam.scss */
 .bradcam_bg_1 {
-  background-image: url(../img/banner/bradcam.png);
+  background-image: url();
 }
 
 /* line 4, ../../Arafath/CL/December/235. Job board/HTML/scss/_bradcam.scss */
@@ -2502,7 +2502,7 @@ h3 {
   padding: 182px 0 102px 0;
   background-repeat: no-repeat;
   position: relative;
-  z-index: 0;
+  z-index: 2;
   background-size: cover;
 }
 

@@ -12,7 +12,7 @@
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="index.php">
-                                        <img src="img/logokartar1.png" alt="" height="70px" style="margin-top: 2px" data-aos="fade-right"  data-aos-delay="1000" data-aos-easing="ease-in-out"/>
+                                        <img src="img/logokartar1.png" alt="" height="70px" style="margin-top: 2px" data-aos="fade-right"  data-aos-delay="900" data-aos-easing="ease-in-out"/>
                                     </a><br/>
                                 </div>
                             </div>
@@ -38,7 +38,6 @@
                                             <li><a href="job_details.php">Kegiatan</a></li>
                                             <li><a href="contact.php">Peminjaman</a></li>
                                             <li><a href="maps.php">Lokasi</a></li>
-                                            <li><a class="btn btn-primary p-1" href="login.php">Login</a></li>
                                         </ul>
                                     </nav>
                                 </div>

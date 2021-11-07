@@ -80,8 +80,9 @@
         document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
       }
     </script>
-   <?php include 'nav.php'; ?>
 
+    
+   <?php include 'nav.php'; ?>
     <!-- bradcam_area  -->
     <div class="bradcam_area bradcam_bg_1">
         <div class="container">
@@ -96,6 +97,7 @@
     </div>
     <!--/ bradcam_area  -->
 
+    <div class="featured_candidates_area candidate_page_padding">
     <div class="job_details_area">
         <div class="container m-2 mb-4 col-lg-12 row">
         <div class="col-lg-8">
@@ -173,7 +175,6 @@
                         </div>
                         
                     </div>
-                    
                 </div>
             <?php } ?>
 <!--                 <div class="apply_job_form white-bg">
@@ -289,9 +290,12 @@
                             <h5 style="color: grey"><i class="fa fa-clock-o"></i> Belum ada jadwal kegiatan berikutnya</h5>
                             
                         </div>
-                <?php } ?>
+                <?php 
+                    } 
+                ?>
                 </div>
-                </div>
+            </div>
+        </div>
     </div>
 </div>
 

@@ -49,7 +49,7 @@
 
             #myBtn:hover {
             background-color: #404040;
-}
+        }
 </style>
 </head>
 

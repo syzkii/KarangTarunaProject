@@ -3,23 +3,25 @@
 if (isset($_POST['submit'])) {
     $query="INSERT INTO peminjaman values (null,'".$_POST['keperluan']."','".$_POST['tgl']."','".$_POST['mulai']."','".$_POST['selesai']."','Booked','".$_POST['deskripsi']."','".$_POST['nama']."','".$_POST['tel']."')";
     $sql=mysqli_query($con,$query);
+
     if ($sql) {
       //echo "<script>alert('Data berhasil ditambah!');window.location.href='index.php?p=peminjaman'</script>";
       $alert='
       <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>Permohonan Tersimpan</strong> Silakan lanjutkan administrasi berikutnya.
+        <strong>Permohonan Tersimpan</strong> karena memenuhi syarat dan ketentuan
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       ';
+
     }else{
       //echo "<script>alert('Penambahan data gagal!');window.location.href='index.php?p=peminjaman'</script>";
       $alert='
       <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong>Permohonan ditolak</strong> dikarenakan tidak memenuhi syarat.
+        <strong>Permohonan ditolak</strong> ditolak karena tidak memenuhi syarat dan ketentuan
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"> &times;</span>
         </button>
       </div>
       ';
@@ -27,12 +29,13 @@ if (isset($_POST['submit'])) {
   }
 
 ?>
-<!-- <div class="alert alert-success alert-dismissible fade show" role="alert">
-  <strong>Permohonan Tersimpan</strong> Silakan lanjutkan administrasi berikutnya.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div> -->
+
+ <!--<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Permohonan Tersimpan</strong> Silakan lanjutkan administrasi berikutnya.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+    </button>
+ </div>-->
+
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 <head>
@@ -78,6 +81,7 @@ if (isset($_POST['submit'])) {
             cursor: pointer;
             padding: 0px;
             border-radius: 50%;
+            box-shadow: 1.5px 2.5px;
         }
 
             #myBtn:hover {
@@ -275,14 +279,18 @@ if (isset($_POST['submit'])) {
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-home"></i></span>
             <div class="media-body">
-              <h3>Balai RW</h3>
-              <p>Jl.</p>
+              <h3 class="mb-4">Balai RW</h3> 
+              <!--<p>Jl.</p>-->
             </div>
           </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.570079048283!2d112.61611754824175!3d-7.175591672378192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77ffd035b26001%3A0xbe42fb866c986b71!2sBalai%20RW%204%20Green%20Hill!5e0!3m2!1sen!2sid!4v1636292666673!5m2!1sen!2sid" frameborder="0" style="border:1; width: 100%; height: 400px;" allowfullscreen>
+          </iframe>
+          
+
           <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-time"></i></span>
+            <span class="contact-info__icon mt-4"><i class="ti-time"></i></span>
             <div class="media-body">
-              <h3>Tanggal Pemesanan Dimulai Hari ini</h3>
+              <h3 class="mt-4">Tanggal Pemesanan Dimulai Hari ini</h3>
               <p>Hingga beberapa hari kedepan</p>
             </div>
           </div>

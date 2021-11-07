@@ -161,14 +161,14 @@
     </div>
 
     <!--/ catagory_area -->
-    <div  id="kegiatan"><br><br><br></div>
+    <div id="kegiatan"><br><br><br></div>
     <!-- popular_catagory_area_start  -->
         <div class="popular_catagory_area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section_title mb-40">
-                            <h3>Kegiatan</h3>
+                            <center><h3>Kegiatan</h3></center><br>
                         </div>
                     </div>
                 </div>
